@@ -1,23 +1,8 @@
-import React, {useState} from 'react'; 
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
 
 
+ReactDOM.render(<App />, document.getElementById('root'));
 
-const App= () =>{
-    
-     
-
-    return (
-      <div className="App">
-        
-      </div>
-    );
-
-    
-  
-}
-
-
-
-export default App;
