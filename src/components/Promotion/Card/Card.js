@@ -1,23 +1,24 @@
 import React from 'react';
+import './Card.css';
 
 const PromotionCard = ({promotion}) =>(
-  <div>
-    <img src={promotion.imageUrl}/>
-    <div>
-      <h1>{promotion.title}</h1>
-      <span>R$ {promotion.price}</span>
+  <div className="promotion-card">
+    <img src={promotion.imageUrl} className="promotion-card__image"/>
+    <div className="promotion-card__info">
+      <h1 className="promotion-card__title">{promotion.title}</h1>
+      <span className="promotion-card__price">R$ {promotion.price}</span>
 
-      <footer>
+      <footer className="promotion-card__footer">
         {promotion.comments.length > 0 &&(
-          <div>"{promotion.comments[0].comment}"</div>
+          <div className="promotion-card__comment">"{promotion.comments[0].comment}"</div>
         )}
 
-        <div>{promotion.comments.length} Comentários</div>
-        <a href={promotion.url} target="_black">IR PARA O SITE</a>
+        <div className="promotion-card__comments-count">{promotion.comments.length} Comentários</div>
+        <a href={promotion.url} target="_black" className="promotion-card__link">IR PARA O SITE</a>
       </footer>
     </div>
 
-18min
+
   </div>
 );
 
