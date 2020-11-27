@@ -27,10 +27,25 @@
 
 .promotion-card__footer{
   display: flex;
-  30min
+  align-items: center;
+  
 }
 
 .promotion-card__comment{
   color: #95a5a6;
   font-weight: 700;
+}
+
+.promotion-card__comments-count{
+margin-left: auto;
+margin-right: 20px;
+color: #2498db;
+}
+
+.promotion-card__link{
+  border: 1px solid #2498db ;
+  border-radius: 4px;
+  color: #2498db;
+  text-decoration: none;
+  padding: 8px 10px;
 }
