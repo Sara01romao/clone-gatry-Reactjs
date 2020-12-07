@@ -6,15 +6,19 @@ import {
   Link
 } from "react-router-dom";
 
+import PagesPromotionSearch from './Promotion/Search/Search';
+import PagesPromotionForm from './Promotion/Form/Form';
 
-//implementa a configução 11:50
 
-const Root =()=> {
+const Root= ()=> {
   return(
     <Router>
       <Switch>
-        <Route path="/" component=[]/>
+        <Route path="/create" component={PagesPromotionForm} />
+        <Route path="/" component={PagesPromotionSearch} />
       </Switch>
     </Router>
-  )
+  );
 }
+
+export default Root;
