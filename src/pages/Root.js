@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  
 } from "react-router-dom";
 
 import PagesPromotionSearch from './Promotion/Search/Search';
@@ -15,10 +15,11 @@ const Root= ()=> {
     <Router>
       <Switch>
         <Route path="/create" component={PagesPromotionForm} />
+        <Route path="/edit/:id" component={PagesPromotionForm} />
         <Route path="/" component={PagesPromotionSearch} />
       </Switch>
     </Router>
-  );
+  );//19:20
 }
 
 export default Root;
